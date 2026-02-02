@@ -1,0 +1,106 @@
+{
+    "account_currency": "USD",
+    "instruments": [
+        {
+            "currency": "USD",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "AUD",
+            "file": "../data/AUDUSD_1min.csv",
+            "size": 1.0,
+            "margin": 0.05,
+            "index": 1
+        },
+        {
+            "currency": "GBP",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "EUR",
+            "file": "../data/EURGBP_1min.csv",
+            "size": 1.0,
+            "margin": 0.06,
+            "index": 2
+        },
+        {
+            "currency": "USD",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "EUR",
+            "file": "../data/EURUSD_1min.csv",
+            "size": 1.0,
+            "margin": 0.05,
+            "index": 3
+        },
+        {
+            "currency": "USD",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "GBP",
+            "file": "../data/GBPUSD_1min.csv",
+            "size": 1.0,
+            "margin": 0.05,
+            "index": 4
+        },
+        {
+            "currency": "CAD",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "USD",
+            "file": "../data/USDCAD_1min.csv",
+            "size": 1.0,
+            "margin": 0.02,
+            "index": 5
+        },
+        {
+            "currency": "CHF",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "USD",
+            "file": "../data/USDCHF_1min.csv",
+            "size": 1.0,
+            "margin": 0.05,
+            "index": 6
+        },
+        {
+            "symbol": "USD",
+            "currency": "CNY",
+            "step": 0.0001,
+            "size": 1.0,
+            "margin": 0.27,
+            "fee": 0.0,
+            "file": "../data/USDCNY_1min.csv",
+            "index": 7
+        },
+        {
+            "symbol": "USD",
+            "currency": "HKD",
+            "step": 0.0001,
+            "size": 1.0,
+            "margin": 0.12,
+            "fee": 0.0,
+            "file": "../data/USDHKD_1min.csv",
+            "index": 8
+        },
+        {
+            "currency": "JPY",
+            "step": 1.0,
+            "fee": 0.0,
+            "symbol": "USD",
+            "file": "../data/USDJPY_1min.csv",
+            "size": 1.0,
+            "margin": 0.05,
+            "index": 9
+        },
+        {
+            "symbol": "USD",
+            "currency": "KRW",
+            "step": 0.01,
+            "size": 1.0,
+            "margin": 0.10,
+            "fee": 0.0,
+            "file": "../data/USDKRW_1min.csv",
+            "index": 10
+        }
+    ],
+    "cash": 100000.0
+}

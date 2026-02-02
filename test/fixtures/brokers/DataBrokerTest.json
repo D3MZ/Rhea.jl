@@ -1,0 +1,24 @@
+{
+    "account_currency": "USD",
+    "cash": 100000.0,
+    "instruments": [
+        {
+            "symbol": "EUR",
+            "currency": "USD",
+            "file": "test/fixtures/brokers/EURUSD.csv",
+            "step": 0.00001,
+            "size": 1.0,
+            "margin": 0.02,
+            "fee": 0.00005
+        },
+        {
+            "symbol": "USD",
+            "currency": "JPY",
+            "file": "test/fixtures/brokers/USDJPY.csv",
+            "step": 0.01,
+            "size": 1.0,
+            "margin": 0.02,
+            "fee": 0.01
+        }
+    ]
+}

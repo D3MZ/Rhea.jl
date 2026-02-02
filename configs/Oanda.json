@@ -1,0 +1,65 @@
+{
+    "account_id": "101-002-28645136-001",
+    "streaming": "https://stream-fxpractice.oanda.com",
+    "rest": "https://api-fxpractice.oanda.com",
+    "instruments": [
+        {
+            "symbol": "EUR",
+            "currency": "USD"
+        },
+        {
+            "symbol": "USD",
+            "currency": "JPY"
+        },
+        {
+            "symbol": "GBP",
+            "currency": "USD"
+        },
+        {
+            "symbol": "AUD",
+            "currency": "USD"
+        },
+        {
+            "symbol": "USD",
+            "currency": "CAD"
+        },
+        {
+            "symbol": "USD",
+            "currency": "CHF"
+        },
+        {
+            "symbol": "NZD",
+            "currency": "USD"
+        },
+        {
+            "symbol": "EUR",
+            "currency": "GBP"
+        },
+        {
+            "symbol": "EUR",
+            "currency": "JPY"
+        },
+        {
+            "symbol": "GBP",
+            "currency": "JPY"
+        }
+    ],
+    "headers": [
+        [
+            "Authorization",
+            "Bearer 7c3aaefda8dd761efbbb84d40c8ec344-e368d48bd6256a8b82692c4b3496564e"
+        ],
+        [
+            "Content-Type",
+            "application/json"
+        ],
+        [
+            "Accept-Datetime-Format",
+            "RFC3339"
+        ],
+        [
+            "Connection",
+            "keep-alive"
+        ]
+    ]
+}

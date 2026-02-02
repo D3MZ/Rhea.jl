@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Rhea = "33b3dd72-4584-4518-9b0b-a4958c4a7919"
+
+[sources]
+Rhea = {path = ".."}
