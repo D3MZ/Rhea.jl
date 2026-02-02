@@ -25,31 +25,6 @@ OANDA Broker's hedge position will be collapsed into a single direction. So if i
 - Data download helper from Polygon providers.
 - Broker, Reward, and Agent agnostic.
 
-# TODO
-- [ ] Risk feature, that closes positions and terminates if hit.
-- [ ] PatternMatchAgent uses wall-clock `now()` for throttle; should use `State.time` for deterministic backtests. Add to deterministic backtests.
-- [ ] BuyHold and Harvest strategies rebalance every step; implement buy-hold and banded behavior (use `initialized`, `band`).
-- [ ] Use broker fill timestamps for Position time (needs async logic and channels).
-- [ ] OANDA stream: update broker state in producer task so slow consumers don't stall state updates.
-- [ ] Terminate core loop if balance goes negative so `logreturn` doesn't need to handle negative NLV/bankruptcy without `DomainError`.
-
-# Futher scoping
-- [ ] Brokers are initialized with either Broker(), Broker(params...), Broker(configfile.json) depending on complexity.
-- [ ] Broker() to handle most/all defaults, and standardized json confg -> params helper across Brokers
-- [ ] The main engine for state in iterate(State(Broker))
-
-## Before / If Opensourcing
-- [ ] Secure Keys
-- [ ] Clean commits
-
-## Shelved / Iced
-- [ ] Refactor Core to own state changes instead of Brokers? How would Oanda / Online brokers handle this? They'll need to mutate a book vector anyway, or Core will need a drain function when it's slow specifically for online brokers. Maybe Core shouldn't do this. Keeping state on Broker's side, allows State(broker) to be it's own iterator: Online brokers will just mutate the state until it's called again, and offline brokers will iterate the `books(broker)` whenever state is called.
- - [ ] Should brokers dispatch on common methods `books(broker)` (an iterator for offline brokers, channel for online brokers), `submit(broker, order)` which will submit 1 order at time and return a confirmation, and `state(broker)` which will provide the initial state for Core to operate on. 
- - [ ] Replace Price with Position?
-- [ ] Refactor core to be orthagonal as single step vs multi-step performance are identical. 
-- [ ] Refactor using Accessors.jl # Not worth it atm.
-- [ ] Refactor code to be more clear verb-based semantics instead of constructors.
-
 ## Testing
 ## test/oanda_live.jl
 - [x] cash is correctly tracked by the state vs Oanda's getcash()
