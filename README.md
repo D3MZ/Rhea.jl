@@ -1,4 +1,4 @@
-# Rhea
+# Rhea [BETA - NOT STABLE NOT COMPLETE]
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://D3MZ.github.io/Rhea.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://D3MZ.github.io/Rhea.jl/dev/)
@@ -13,14 +13,17 @@ Online RL Trading system that's broker, agent, and reward agnostic.
 
 > "When Cronus learnt that he was destined to be overthrown by one of his children like his father before him, he swallowed all the children Rhea bore as soon as they were born. When Rhea had her sixth and final child, Zeus, she spirited him away and hid him in Crete, giving Cronus a rock to swallow instead."
 
-Well I guess sometimes she'll give you rocks.
+...Sometimes she'll give you rocks.
 
 ## GOTCHAS
 OANDA Broker's hedge position will be collapsed into a single direction. So if it's 3 longs and 2 shorts, it'll be collapsed to 1 long. Therefore, to "close" this position, it'll only short 1 unit, but this will register as 3 longs and 3 shorts in OANDA. This may impact margin calculations.
 
 ## Features
-- Works with many instruments in parallel with their own base currencies, margins, broker fees, differing step sizes, and minimum order sizes. 
-- Polygon data download helper (now Massive) 
+- Fast/Low-footprint: Optimized core loop using Multiple Dispatch and `StaticArrays` to minimize allocations and maximize throughput.
+- Mostly native Julia.
+- Multi-Instrument Support: Native handling of multiple assets with independent base currencies, margins, fees, tick sizes and minimum order sizing.
+- Data download helper from Polygon providers.
+- Broker, Reward, and Agent agnostic.
 
 # TODO
 - [ ] Risk feature, that closes positions and terminates if hit.
